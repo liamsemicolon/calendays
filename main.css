@@ -3,7 +3,7 @@ body {
     color: rgb(247, 246, 246);
     text-align: left;
     font-family: Arvo;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   img {
@@ -48,10 +48,20 @@ body {
 }
 figure {
   display: inline-block;
+  vertical-align: top;
   margin: 20px; /* adjust as needed */
 }
 figure figcaption {
   text-align: center;
   font-size: 15px;
   font-style: italic;
+}
+
+a:link {
+  color: rgb(164, 183, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(247, 246, 246);
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>CalenDays | Página diaria</title>
+    <link rel="icon" href="image/icono.png">
+</head>
+<header>
+<div class="topnav">
+    <figure>
+    <img style="float: left; margin: 0px 15px 15px 0px;" src="image/calendayshoriz.png" width="100"/>
+    <a href="main.html">Quiénes somos</a>
+    <a  class="active" href="online.html">Página diaria</a>
+    </figure>
+  </div>
+</header>
+<body>
+    <a class="weatherwidget-io" href="https://forecast7.com/es/n34d60n58d38/buenos-aires/" data-label_1="BUENOS AIRES" data-label_2="Clima de hoy" data-theme="original" >BUENOS AIRES Clima de hoy</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    <br>
+    <div style="background-color: #507ab4; width: 33%; float: left; height: 300px; text-align: center; vertical-align: middle;">
+        <h1>
+            <div id="current_date">
+                <script>
+                date = new Date();
+                var month = date.toLocaleString('default', { month: 'long' });
+                day = date.getDate();
+                document.getElementById("current_date").innerHTML ="Día de hoy:<br>"+ day + " de<br>" + month;
+                </script>
+                <br>
+                <img src="image/lol.png">
+        </h1>
+    </div>
+    <div style="background-color: rgb(50, 71, 110); width: 66%; float: left; height: 300px; text-align: center; vertical-align: middle;">
+        <iframe src="feriados.html"
+        width="100%" height="300px"></iframe>
+    </div>
+    <br>
+    <h2>Contacto</h2>
+    <img src="image/ig.svg" class="blanco" style="vertical-align: middle;"/> <a href="https://www.instagram.com/calendays_oficial/">@calendays_oficial</a><br>
+    <img src="image/mail.svg" class="blanco" style="vertical-align: middle;"/> calendays.junior@gmail.com<br>
+</html>
